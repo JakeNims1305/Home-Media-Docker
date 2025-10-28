@@ -4,7 +4,7 @@ services:
   transmission:
     image: lscr.io/linuxserver/transmission:latest
     container_name: ${TRANSMISSION_CONTAINER_NAME}
-    network_mode: service:vpn
+    network_mode: service:gluetun
     env_file:
       - ./.env
       - ../../.env
@@ -27,7 +27,7 @@ services:
     #   - 51413:51413/udp
     restart: unless-stopped
     depends_on:
-      - vpn
+      - gluetun
       # - prowlarr
       # - sonarr
       # - radarr

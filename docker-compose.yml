@@ -13,7 +13,7 @@ include:
   - ./compose-files/flaresolverr/flaresolverr.yml
   - ./compose-files/traefik/traefik-compose.yml
   - ./compose-files/authentik/authentik.yml
-  - ./compose-files/vpn/vpn.yml
+  - ./compose-files/vpn/vpn.yml # ------- This is your new vpn config
   - ./compose-files/transmission/transmission.yml ##  --profile vpn
   - ./compose-files/duplicati/duplicati.yml ## --profile vpn
   - ./compose-files/pihole/pihole.yml ## --profile vpn
